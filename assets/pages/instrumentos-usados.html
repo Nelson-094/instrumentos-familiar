@@ -1,76 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Nelson Gabriel Sanchez">
-    <title>Instrumentos Usados - Instrumentos Musicales Familiar</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- CSS Personalizado -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Nelson Gabriel Sanchez">
+        <title>Instrumentos Usados - Instrumentos Musicales Familiar</title>
 
-    <!-- Ícono -->
-    <link rel="icon" href="assets/img/icono.ico" type="image/x-icon">
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet">
 
-</head>
+        <!-- CSS Personalizado -->
+        <link rel="stylesheet" href="../css/style.css">
 
-<body>
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Instrumentos Familiar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#mas-vendidos">Más Vendidos</a></li>
-                <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
-                <li class="nav-item"><a class="nav-link active" href="instrumentos-usados.html">Instrumentos Usados</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-            </ul>
+        <!-- Ícono -->
+        <link rel="icon" href="../img/icono.ico" type="image/x-icon">
+
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../../index.html">Inicio</a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link"
+                                    href="catalogo.html">Catálogo</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="instrumentos-usados.html">Instrumentos
+                                    Usados</a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                    href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Contenido -->
+        <main class="container py-5">
+            <h1 class="text-center mb-5">Instrumentos Usados</h1>
+            <p class="text-center">Publicá o encontrá instrumentos usados en
+                buen estado a precios accesibles.</p>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/img/catalogo/guitarra-usada.png"
+                            class="card-img-top" alt="Guitarra usada">
+                        <div class="card-body">
+                            <h5 class="card-title">Guitarra Criolla (Usada)</h5>
+                            <p class="card-text">Excelente estado. Poco uso.
+                                Ideal para estudiantes.</p>
+                            <a href="#" class="btn btn-dark">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Podés agregar más instrumentos usados acá -->
             </div>
-        </div>
-        </nav>
-    </header>
+        </main>
 
-    <!-- Contenido -->
-    <main class="container py-5">
-        <h1 class="text-center mb-5">Instrumentos Usados</h1>
-        <p class="text-center">Publicá o encontrá instrumentos usados en buen estado a precios accesibles.</p>
-        <div class="row mt-4">
-        <div class="col-md-4 mb-4">
-            <div class="card">
-            <img src="assets/img/catalogo/guitarra-usada.png" class="card-img-top" alt="Guitarra usada">
-            <div class="card-body">
-                <h5 class="card-title">Guitarra Criolla (Usada)</h5>
-                <p class="card-text">Excelente estado. Poco uso. Ideal para estudiantes.</p>
-                <a href="#" class="btn btn-dark">Ver Detalles</a>
+        <!-- WhatsApp Logo -->
+        <a id="whatsapp-link" target="_blank"
+            aria-label="Envía un mensaje por Whatsapp"
+            href="https://wa.me/+5492616410567?text=Hola, tengo una pregunta.">
+            <div class="whatsapp-logo">
+                <img width="40" height="40" src="../img/whatsapp.png"
+                    alt="WhatsApp">
             </div>
-            </div>
-        </div>
-        <!-- Podés agregar más instrumentos usados acá -->
-        </div>
-    </main>
+        </a>
 
-                                    <!-- WhatsApp Logo -->
-    <a id="whatsapp-link" target="_blank" aria-label="Envía un mensaje por Whatsapp" href="https://wa.me/+5492616410567?text=Hola, tengo una pregunta.">
-        <div class="whatsapp-logo">
-        <img width="40" height="40" src="assets/img/whatsapp.png" alt="WhatsApp">
-        </div>
-    </a>
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-3 mt-5">
+            <p class="mb-1">&copy; 2025 Nelson - Todos los derechos
+                reservados.</p>
+            <a href="privacidad-y-terminos.html" class="text-light">Política de
+                Privacidad y Términos</a>
+        </footer>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3 mt-5">
-        <p class="mb-1">&copy; 2025 Nelson - Todos los derechos reservados.</p>
-        <a href="privacidad-y-terminos.html" class="text-light">Política de Privacidad y Términos</a>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+        <!-- Bootstrap JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>

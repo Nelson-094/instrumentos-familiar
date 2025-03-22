@@ -85,6 +85,20 @@ body {
     transition: transform 0.3s ease;
 }
 
+.card-img-top {
+    width: 100%;
+    height: 250px; /* o el alto que prefieras */
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+
+
+
+
+
 /* Catálogo de Productos */
 .card {
     border: none;
