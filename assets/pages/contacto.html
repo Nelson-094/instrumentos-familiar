@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nelson Gabriel Sanchez">
+    <title>Contacto - Instrumentos Musicales Familiar</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Ícono -->
+    <link rel="icon" href="assets/img/icono.ico" type="image/x-icon">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="instrumentos-usados.html">Instrumentos Usados</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido -->
+    <main class="container py-5">
+        <h1 class="text-center mb-4">Contacto</h1>
+        <p class="text-center mb-5">¿Tenés alguna duda o querés realizar una consulta? ¡Escribinos!</p>
+        <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark w-100">Enviar</button>
+            </form>
+        </div>
+        </div>
+    </main>
+
+    <!-- WhatsApp Logo -->
+    <a id="whatsapp-link" target="_blank" aria-label="Envía un mensaje por Whatsapp" href="https://wa.me/+5492616410567?text=Hola, tengo una pregunta.">
+        <div class="whatsapp-logo">
+        <img width="40" height="40" src="assets/img/whatsapp.png" alt="WhatsApp">
+        </div>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-1">&copy; 2025 Nelson - Todos los derechos reservados.</p>
+        <a href="privacidad-y-terminos.html" class="text-light">Política de Privacidad y Términos</a>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+/* Configuración General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 60px;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url('assets/img/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    background: rgba(0, 0, 0, 0.281);
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.849);
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    background-color: #f1c40f;
+    color: #222;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-btn:hover {
+    background-color: #d4ac0d;
+    transform: scale(1.05);
+}
+
+/* Navbar */
+.navbar {
+    padding: 10px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: 18px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #f8c291;
+}
+
+/* Whatsapp */
+.whatsapp-logo {
+    position: fixed;
+    bottom: 0000;
+    right: 5px;
+    top: fixed;
+    z-index: 1000;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Catálogo de Productos */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+    font-size: 18px;
+    position: center;
+}
+
+/* Pie de Página */
+.footer {
+    background: #222;
+    color: white;
+}
+
+.footer a {
+    color: #f8c291;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+}
