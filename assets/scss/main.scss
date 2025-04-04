@@ -256,7 +256,7 @@ body {
         .carousel-container {
             display: flex;
             animation: scroll 30s linear infinite;
-            width: calc(200px * 10);
+            width: max-content;
 
             &:hover {
                 animation-play-state: paused;
@@ -297,7 +297,7 @@ body {
     }
 
     100% {
-        transform: translateX(calc(-200px * 5));
+        transform: translateX(calc(-50%));
     }
 }
 
@@ -321,11 +321,6 @@ body {
         }
     }
 }
-
-
-
-
-
 
 
 

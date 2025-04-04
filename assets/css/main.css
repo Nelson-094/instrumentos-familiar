@@ -191,7 +191,8 @@ body {
 .brands-carousel .carousel-container {
   display: flex;
   animation: scroll 30s linear infinite;
-  width: 2000px;
+  width: -moz-max-content;
+  width: max-content;
 }
 .brands-carousel .carousel-container:hover {
   animation-play-state: paused;
@@ -225,7 +226,7 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-1000px);
+    transform: translateX(-50%);
   }
 }
 @media (max-width: 768px) {
