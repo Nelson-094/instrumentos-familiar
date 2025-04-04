@@ -1,0 +1,263 @@
+// Variables
+$primary-color: #1e272e;
+$secondary-color: #4bcffa;
+$accent-color: #f1c40f;
+$accent-hover: #d4ac0d;
+$price-color: #fb9c3e;
+$link-hover: #f8c291;
+$text-color: #222;
+$text-light: #666;
+$white: white;
+$black: #000;
+
+// Mixins
+@mixin flex-center($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin card-shadow {
+    box-shadow: 0 4px 8px rgba($black, 0.1);
+}
+
+@mixin transition($property: all, $time: 0.3s) {
+    transition: $property $time ease;
+}
+
+@mixin text-shadow($intensity: 0.6) {
+    text-shadow: 2px 2px 6px rgba($black, $intensity);
+}
+
+// Configuración General
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 60px;
+}
+
+// Hero
+.hero {
+    height: 100vh;
+
+    background: {
+        image: url('assets/img/hero-bg.png');
+        size: cover;
+        position: center;
+        repeat: no-repeat;
+    }
+
+    padding: 40px 20px;
+    @include flex-center(column);
+    text-align: center;
+    color: $white;
+
+    h1 {
+        background: rgba($black, 0.281);
+        padding: 30px;
+        border-radius: 10px;
+
+        font: {
+            size: 3.5rem;
+            weight: 700;
+        }
+
+        @include text-shadow();
+        margin-bottom: 20px;
+    }
+
+    p {
+        font: {
+            size: 1.7rem;
+            weight: 400;
+        }
+
+        @include text-shadow(0.849);
+        margin-bottom: 30px;
+    }
+
+    &-btn {
+        background-color: $accent-color;
+        color: $text-color;
+        border: none;
+        padding: 12px 25px;
+
+        font: {
+            size: 1.1rem;
+            weight: bold;
+        }
+
+        border-radius: 8px;
+        @include transition(background-color, 0.3s);
+        @include transition(transform, 0.2s);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &:hover {
+            background-color: $accent-hover;
+            transform: scale(1.05);
+        }
+    }
+}
+
+// Sección de tarjetas
+
+.cards {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 80px; 
+    margin: 40px auto;
+    width: 100%;
+}
+
+.card {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    border: none;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &.card-img-top {
+            height: 250px;
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+    }
+
+    &-body {
+        font-size: 18px;
+        position: center;
+    }
+}
+
+// Elementos de tarjeta
+.name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 1rem;
+    color: $text-light;
+    margin-bottom: 5px;
+}
+
+.price {
+    color: $price-color;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cts {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+// Botones
+.btn-primary {
+    background-color: $primary-color;
+    color: $white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $secondary-color;
+        color: $primary-color;
+    }
+}
+
+.suscribirse-btn {
+    background-color: $secondary-color;
+    color: $white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+        background-color: $accent-color;
+        color: $white;
+
+    }
+}
+
+
+// Navbar
+.navbar {
+    padding: 10px;
+
+    &-dark .navbar-nav .nav-link {
+        color: $white;
+        font-size: 18px;
+
+        &:hover {
+            color: $link-hover;
+        }
+    }
+}
+
+.nav-link {
+    font-size: 18px;
+    color: $white;
+
+    &:hover {
+        color: $link-hover;
+    }
+}
+
+// Whatsapp
+.whatsapp-logo {
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    z-index: 1000;
+    border: none;
+    @include card-shadow;
+    @include transition(transform);
+}
+
+// Footer
+.footer {
+    background: $text-color;
+    color: $white;
+
+    a {
+        color: $link-hover;
+        text-decoration: none;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
