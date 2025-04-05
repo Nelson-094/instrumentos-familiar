@@ -26,6 +26,7 @@ body {
   align-items: center;
   text-align: center;
   color: white;
+  animation: fadeSlideIn 1s ease-out both;
 }
 .hero h1 {
   background: rgba(0, 0, 0, 0.281);
@@ -60,6 +61,16 @@ body {
   transform: scale(1.05);
 }
 
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 100;
+    transform: translateY(0);
+  }
+}
 .cards {
   display: flex;
   flex-direction: row;
