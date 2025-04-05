@@ -11,10 +11,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- SCSS Personalizado -->
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- CSS Personalizado  "Queda sin uso, pero se deja por si se necesita en el futuro." -->
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/style-original.css"> -->
 
     <!-- Ícono -->
     <link rel="icon" href="../img/icono.ico" type="image/x-icon">
@@ -79,6 +79,17 @@
                 </div>
             </div>
 
+            <div class="card">
+                <img src="../img/catalogo/melodica.png" class="card-img-top" alt="guitarra fender">
+                <span class="name">Melodica Pianica</span>
+                <span class="description">Para Principiantes.</span>
+                <span class="price">$70.000</span>
+                <div class="cts">
+                    <button class="btn-primary">Comprar</button>
+                    <button class="btn-primary">Agregar a Carrito</button>
+                </div>
+            </div>
+
             <!-- Agregar más productos -->
 
         </div>
@@ -96,7 +107,7 @@
     <footer class="bg-dark text-white text-center py-3 mt-5">
         <p class="mb-1">&copy; 2025 Nelson - Todos los derechos
             reservados.</p>
-        <a href="assets/pages/privacidad-y-terminos.html" class="text-light">Política de
+        <a href="privacidad-y-terminos.html" class="text-light">Política de
             Privacidad y Términos</a>
         <p class="suscribirse-btn mt-3">Suscríbete a nuestro boletín</p>
     </footer>
@@ -104,6 +115,18 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Script de suscripción -->
+    <script>
+        document.querySelector(".suscribirse-btn").addEventListener("click", function () {
+            const email = prompt("Por favor, ingresa tu dirección de correo electrónico:");
+            const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email && regexEmail.test(email)) {
+                alert("¡Gracias por suscribirte!");
+            } else {
+                alert("Por favor, ingresa un correo válido.");
+            }
+        });
+    </script>
 </body>
 
 </html>
