@@ -191,20 +191,47 @@ body {
   background-color: #f1c40f;
 }
 
+.filtros-container {
+  padding-top: 10px;
+}
+
+.hero-btn,
 .btn-buscar {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
   background-color: white;
   color: #1e272e;
-  border: 1px solid #1e272e;
-  padding: 10px 20px;
+  border: 1px solid #cfa900;
+  padding: 8px 18px;
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
+  font-size: 0.95rem;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.hero-btn:hover,
 .btn-buscar:hover {
-  background-color: #1e272e;
-  color: white;
+  background-color: #ffc400;
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 767px) {
+
+  .hero-btn,
+  .btn-buscar {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+
+  .filtros-container .row {
+    margin: 0 -5px;
+  }
+
+  .filtros-container [class*="col-"] {
+    padding: 0 5px;
+  }
 }
 
 .navbar {
