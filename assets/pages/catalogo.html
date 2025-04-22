@@ -43,7 +43,14 @@
         </nav>
     </header>
 
-    <main class="container py-5">
+    <div class="d-flex justify-content-between mt-3">
+        <a href="#Instrumentos" class="hero-btn">Instrumentos</a>
+        <input type="search" name="myInput" class="btn-buscar" placeholder="Buscar..." size="25">
+        <a href="#Accesorios" class="hero-btn">Accesorios</a>
+    </div>
+
+    <!-- Catálogo de Productos -->
+    <main section id="Instrumentos" class="container py-5">
         <h1 class="text-center mb-5">Catálogo de Productos</h1>
         <div class="cards">
             <div class="card">
@@ -90,9 +97,69 @@
                 </div>
             </div>
 
+            <div class="card">
+                <img src="../img/catalogo/ukelele.png" class="card-img-top" alt="ukelele texas">
+                <span class="name">Ukelele</span>
+                <span class="description">Para Principiantes.</span>
+                <span class="price">$200.000</span>
+                <div class="cts">
+                    <button class="btn-primary">Comprar</button>
+                    <button class="btn-primary">Agregar a Carrito</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../img/catalogo/flauta.jpg" class="card-img-top" alt="ukelele texas">
+                <span class="name">Flauta Traversa</span>
+                <span class="description">Yamaha YFL362.</span>
+                <span class="price">$200.000</span>
+                <div class="cts">
+                    <button class="btn-primary">Comprar</button>
+                    <button class="btn-primary">Agregar a Carrito</button>
+                </div>
+            </div>
+
             <!-- Agregar más productos -->
 
         </div>
+
+        <!-- Catálogo de Accesorios -->
+        <h2 section id="Accesorios" class="text-center mb-5">Accesorios</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="../img/catalogo/accesorios/baquetas.png" alt="Baquetas" />
+                    <span class="name">Baquetas</span>
+                    <span class="description">Palillos NOVA N7A.</span>
+                    <span class="price">$15.000</span>
+                    <div class="cts">
+                        <button class="btn-primary">Comprar</button>
+                        <button class="btn-primary">Agregar a Carrito</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../img/catalogo//accesorios/correa-guitarra.png" alt="Correa de Guitarra" />
+                    <span class="name">Correa de Guitarra</span>
+                    <span class="description">Comodidad y estilo.</span>
+                    <span class="price">$3.000</span>
+                    <div class="cts">
+                        <button class="btn-primary">Comprar</button>
+                        <button class="btn-primary">Agregar a Carrito</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../img/catalogo//accesorios/capotraste.png" alt="Capo traste" />
+                    <span class="name">Capo Traste</span>
+                    <span class="description">Comodidad y estilo.</span>
+                    <span class="price">$13.000</span>
+                    <div class="cts">
+                        <button class="btn-primary">Comprar</button>
+                        <button class="btn-primary">Agregar a Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Agregar más accesorios -->
     </main>
 
     <!-- Logo de WhatsApp -->
@@ -110,6 +177,16 @@
         <a href="privacidad-y-terminos.html" class="text-light">Política de
             Privacidad y Términos</a>
         <p class="suscribirse-btn mt-3">Suscríbete a nuestro boletín</p>
+
+        <!-- Footer -->
+        <div class="redes-sociales mt-2">
+            <a href="https://facebook.com/" class="red-social facebook">
+                <img src="../img/facebook-logo.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com/" class="red-social instagram">
+                <img src="../img/instagram-logo.png" alt="Instagram">
+            </a>
+        </div>
     </footer>
 
     <!-- Bootstrap JS -->
