@@ -6,7 +6,7 @@ Sitio web desarrollado que permite visualizar un catálogo de instrumentos music
 
 El sitio se encuentra publicado en:  
 🔗 [https://nelson-094.github.io/instrumentos-familiar](https://nelson-094.github.io/instrumentos-familiar)
-🔗 [http://instrumentosfamiliar.wuaze.com] (http://instrumentosfamiliar.wuaze.com)
+🔗 [http://instrumentosfamiliar.wuaze.com] 
 
 
 ## 📂 Contenido del sitio
