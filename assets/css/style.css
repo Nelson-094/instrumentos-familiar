@@ -195,14 +195,14 @@ body {
   padding-top: 10px;
 }
 
-.hero-btn,
+.hero-btn2,
 .btn-buscar {
   display: block;
   width: 100%;
   margin: 0 auto;
   background-color: white;
   color: #1e272e;
-  border: 1px solid #cfa900;
+  border: 1px solid #cfa90086;
   padding: 8px 18px;
   border-radius: 6px;
   cursor: pointer;
@@ -211,7 +211,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.hero-btn:hover,
+.hero-btn2:hover,
 .btn-buscar:hover {
   background-color: #ffc400;
   color: rgb(0, 0, 0);
@@ -219,7 +219,7 @@ body {
 
 @media (max-width: 767px) {
 
-  .hero-btn,
+  .hero-btn2,
   .btn-buscar {
     padding: 6px 12px;
     font-size: 0.85rem;
